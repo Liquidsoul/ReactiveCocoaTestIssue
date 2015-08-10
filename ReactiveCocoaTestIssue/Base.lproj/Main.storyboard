@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8173.3" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,8 +15,42 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MbR-9E-GAy">
+                                <rect key="frame" x="202" y="265" width="197" height="71"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sf4-hF-5N2">
+                                        <rect key="frame" x="147" y="20" width="30" height="30"/>
+                                        <state key="normal" title="Go"/>
+                                    </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0BZ-mi-A9L">
+                                        <rect key="frame" x="20" y="21" width="113" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="sf4-hF-5N2" secondAttribute="trailing" constant="20" id="5TR-Tv-A87"/>
+                                    <constraint firstItem="sf4-hF-5N2" firstAttribute="leading" secondItem="0BZ-mi-A9L" secondAttribute="trailing" constant="14" id="8mm-Tm-bwm"/>
+                                    <constraint firstItem="0BZ-mi-A9L" firstAttribute="centerY" secondItem="MbR-9E-GAy" secondAttribute="centerY" id="Z4J-vd-Jul"/>
+                                    <constraint firstAttribute="width" constant="197" id="uzG-4q-nct"/>
+                                    <constraint firstAttribute="height" constant="71" id="xSf-D9-ch8"/>
+                                    <constraint firstItem="0BZ-mi-A9L" firstAttribute="leading" secondItem="MbR-9E-GAy" secondAttribute="leading" constant="20" id="xlQ-zN-qCZ"/>
+                                    <constraint firstItem="sf4-hF-5N2" firstAttribute="centerY" secondItem="MbR-9E-GAy" secondAttribute="centerY" id="zpf-IY-Uj0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MbR-9E-GAy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8rk-Oi-bPD"/>
+                            <constraint firstItem="MbR-9E-GAy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xiS-Oq-V74"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="goButton" destination="sf4-hF-5N2" id="cwm-BK-CXM"/>
+                        <outlet property="textField" destination="0BZ-mi-A9L" id="IeF-N9-DBk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
