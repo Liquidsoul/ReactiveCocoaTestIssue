@@ -426,9 +426,9 @@
 		};
 		FE6A11051B787895009DE8EB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 338198FD9B1690DB9D18FBF4 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/Pods/Headers\"/**";
 				INFOPLIST_FILE = ReactiveCocoaTestIssueTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fr.liquidsoul.ReactiveCocoaTestIssueTests;
@@ -439,9 +439,9 @@
 		};
 		FE6A11061B787895009DE8EB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3CCC19274108CD769DD6A80 /* Pods.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				HEADER_SEARCH_PATHS = "\"$(PROJECT_DIR)/Pods/Headers\"/**";
 				INFOPLIST_FILE = ReactiveCocoaTestIssueTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fr.liquidsoul.ReactiveCocoaTestIssueTests;
