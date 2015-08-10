@@ -15,6 +15,7 @@
 		FE6A10EF1B787895009DE8EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE6A10EE1B787895009DE8EB /* Assets.xcassets */; };
 		FE6A10F21B787895009DE8EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE6A10F01B787895009DE8EB /* LaunchScreen.storyboard */; };
 		FE6A10FD1B787895009DE8EB /* ReactiveCocoaTestIssueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6A10FC1B787895009DE8EB /* ReactiveCocoaTestIssueTests.m */; };
+		FE6A11091B787D61009DE8EB /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6A11081B787D61009DE8EB /* ViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		FE6A10F81B787895009DE8EB /* ReactiveCocoaTestIssueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactiveCocoaTestIssueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE6A10FC1B787895009DE8EB /* ReactiveCocoaTestIssueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactiveCocoaTestIssueTests.m; sourceTree = "<group>"; };
 		FE6A10FE1B787895009DE8EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE6A11071B787D61009DE8EB /* ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
+		FE6A11081B787D61009DE8EB /* ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,8 @@
 				FE6A10F01B787895009DE8EB /* LaunchScreen.storyboard */,
 				FE6A10F31B787895009DE8EB /* Info.plist */,
 				FE6A10E21B787895009DE8EB /* Supporting Files */,
+				FE6A11071B787D61009DE8EB /* ViewModel.h */,
+				FE6A11081B787D61009DE8EB /* ViewModel.m */,
 			);
 			path = ReactiveCocoaTestIssue;
 			sourceTree = "<group>";
@@ -272,6 +277,7 @@
 			files = (
 				FE6A10EA1B787895009DE8EB /* ViewController.m in Sources */,
 				FE6A10E71B787895009DE8EB /* AppDelegate.m in Sources */,
+				FE6A11091B787D61009DE8EB /* ViewModel.m in Sources */,
 				FE6A10E41B787895009DE8EB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
